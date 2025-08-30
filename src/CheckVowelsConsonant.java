@@ -1,21 +1,19 @@
 public class CheckVowelsConsonant {
-    public static void main(String[] args) {
-        String hello = "Gayathiri";
-        hello = hello.toLowerCase();
-
-        int vowels = 0, consonants = 0;
-        for (int i = 0; i < hello.length(); i++) {
-            char ch = hello.charAt(i);
-
+    public static void main(String [] args){
+        String name = " Gayathiirriii";
+        name = name.toLowerCase();
+        int vowels = 0 , consonant = 0;
+        for ( int i = 0 ; i < name.length(); i++) {
+            char ch = name.charAt(i);
             if (ch >= 'a' && ch <= 'z') {
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                     vowels++;
                 } else {
-                    consonants++;
+                    consonant++;
                 }
             }
+            System.out.println("vowels =" + vowels);
+            System.out.println("consonant =" + consonant);
         }
-        System.out.println("Vowels: " + vowels);
-        System.out.println("Consonants: " + consonants);
     }
 }
